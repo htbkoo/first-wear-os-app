@@ -1,27 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.wear.widget.BoxInsetLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:background="@color/dark_grey"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.wear.hey.heyfirstwearapp.MainActivity"
-        tools:deviceIds="wear"
-        android:padding="@dimen/box_inset_layout_padding">
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context="com.wear.hey.heyfirstwearapp.MainActivity"
+    tools:deviceIds="wear">
 
     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:boxedEdges="all">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/inner_frame_layout_padding"
-            app:boxedEdges="all">
+            android:orientation="vertical">
 
-        <TextView
+
+            <TextView
                 android:id="@+id/text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/hello_world"/>
+                android:text="@string/hello_world" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/input_text_hint"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|start"
+            android:background="@null"
+            android:src="@drawable/accept_deny_dialog_negative_bg"
+            android:contentDescription="@string/btn_cancel_description" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:background="@null"
+            android:src="@drawable/accept_deny_dialog_positive_bg"
+            android:contentDescription="@string/btn_ok_description" />
 
     </FrameLayout>
 </android.support.wear.widget.BoxInsetLayout>
