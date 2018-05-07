@@ -6,8 +6,11 @@
     -->
     <string name="hello_world">Hello Square World!</string>
 
+    <string name="counter">Counter:</string>
+
     <string name="input_text_hint">Type something!</string>
     <string name="btn_cancel_description">Cancel</string>
     <string name="btn_ok_description">OK</string>
+    <string name="zero">0</string>
 
 </resources>
