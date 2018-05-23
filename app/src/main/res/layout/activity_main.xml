@@ -41,6 +41,7 @@
         </LinearLayout>
 
         <ImageButton
+            android:id="@+id/btn_minus"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="bottom|start"
@@ -50,6 +51,7 @@
             android:src="@drawable/accept_deny_dialog_negative_bg" />
 
         <ImageButton
+            android:id="@+id/btn_plus"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="bottom|end"
