@@ -10,8 +10,9 @@ import android.widget.TextView
 typealias OnClickListenerProvider = (View) -> Unit
 typealias CounterTicker = (Int) -> Int
 
+private const val TAG = "MainActivity"
+
 class MainActivity : WearableActivity() {
-    private val TAG = "MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         logDebug("entered")
